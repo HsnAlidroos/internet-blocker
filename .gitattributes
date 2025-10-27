@@ -1,0 +1,16 @@
+# Exclude Flutter build and web output from language stats
+build/** linguist-generated
+build/** linguist-vendored
+
+# If your project has a web/ folder (Flutter web), mark it as generated
+web/** linguist-generated
+web/** linguist-vendored
+
+# Exclude any HTML files anywhere in the repo
+*.html linguist-generated
+**/*.html linguist-generated
+
+# Help ensure main code directories are counted correctly
+lib/** linguist-language=Dart
+android/** linguist-language=Kotlin
+app/** linguist-language=Kotlin
