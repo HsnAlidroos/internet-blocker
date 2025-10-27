@@ -1,0 +1,23 @@
+name: blocker
+description: "Block internet access for selected apps using GetX state management."
+publish_to: 'HSN Flutter' 
+version: 1.0.0+5
+
+environment:
+  sdk: ^3.9.2
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  get: ^4.7.2
+  permission_handler: ^12.0.0+1
+  installed_apps: ^1.6.0
+  get_storage: ^2.1.1
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
