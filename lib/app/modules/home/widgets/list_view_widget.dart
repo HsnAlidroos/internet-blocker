@@ -9,19 +9,33 @@ class ListViewWidget extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-              child: Obx(() => ListView.builder(
-                    itemCount: controller.filteredApps.length,
-                    itemBuilder: (context, index) {
-                      final app = controller.filteredApps[index];
-                      return ListTileWidget(
-                        app: app,
-                        trailing: Obx(() => Switch(
-                              value: app.isBlocked.value,
-                              onChanged: (value) => controller.toggleAppBlocking(app, value),
-                            )),
-                      );
-                    },
-                  )),
-            );
+      child: Obx(() {
+        if (controller.filteredApps.isEmpty) {
+          return Center(
+            child: Text(
+              'No apps found.',
+              style: TextStyle(fontSize: 18, color: Colors.grey),
+            ),
+          );
+        } else {
+          return ListView.builder(
+            itemCount: controller.filteredApps.length,
+            itemBuilder: (context, index) {
+              final app = controller.filteredApps[index];
+              return ListTileWidget(
+                app: app,
+                trailing: Obx(
+                  () => Switch(
+                    value: app.isBlocked.value,
+                    onChanged: (value) =>
+                        controller.toggleAppBlocking(app, value),
+                  ),
+                ),
+              );
+            },
+          );
+        }
+      }),
+    );
   }
 }

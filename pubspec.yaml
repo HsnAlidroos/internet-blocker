@@ -10,7 +10,7 @@ dependencies:
   #State management & Storage & Shimmer
   get: ^4.7.2
   get_storage: ^2.1.1
-  get_shimmer: ^0.0.5
+  get_shimmer: ^0.0.6
 
   #App info & Permissions
   installed_apps: ^1.6.0

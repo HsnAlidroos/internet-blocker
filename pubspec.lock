@@ -92,10 +92,10 @@ packages:
     dependency: "direct main"
     description:
       name: get_shimmer
-      sha256: "325ee69375f707e213616223c8f710c6a1baa30faa418fda62d8a9f1a5c42723"
+      sha256: "7b4635e1278a7831d073baf9de963f7905641801878e2cab508609374e0e2129"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.5"
+    version: "0.0.6"
   get_storage:
     dependency: "direct main"
     description:

@@ -15,8 +15,6 @@ class HomeView extends GetView<HomeController> {
       body: Obx(() {
         if (controller.isLoading.value) {
           return GetShimmer.fromColors(
-            baseColor: Colors.blue.shade100,
-            highlightColor: Colors.blueAccent.shade100,
             child: Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: 16.0,
@@ -77,6 +75,7 @@ class HomeView extends GetView<HomeController> {
               TextFieldWidget(
                 controller: controller.searchController,
                 onChanged: (value) => controller.searchQuery.value = value,
+                onPressedClose: () => controller.clearSearch(),
               ),
               ListViewWidget(),
             ],

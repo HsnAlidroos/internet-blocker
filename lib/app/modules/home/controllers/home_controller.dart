@@ -18,6 +18,11 @@ class HomeController extends GetxController {
   var isVPNLoading = false.obs;
   final searchController = TextEditingController();
 
+  void clearSearch() {
+    searchQuery.value = '';
+    searchController.clear();
+  }
+
   @override
   void onInit() {
     super.onInit();
