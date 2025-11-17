@@ -6,11 +6,7 @@ import '../controllers/home_controller.dart';
 class HomeBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<VPNService>(
-      () => VPNService(),
-    );
-    Get.lazyPut<HomeController>(
-      () => HomeController(),
-    );
+    Get.lazyPut<VPNService>(() => VPNService());
+    Get.put<HomeController>(HomeController());
   }
 }
