@@ -20,6 +20,6 @@ samples, guidance on mobile development, and a full API reference.
 
 
 **Apks**
-- <a href="https://www.mediafire.com/file/gg8qhwj38jn9o0g/app-release.apk/file" target="_blank" rel="noopener noreferrer">release/app-release.apk (universal)</a>
-- <a href="https://www.mediafire.com/file/0dct43pzlkaje3w/app-arm64-v8a-release.apk/file" target="_blank" rel="noopener noreferrer">release/app-arm64-v8a-release.apk (arm64-v8a)</a>
-- <a href="https://www.mediafire.com/file/pf3qriqrw1g1cqx/app-armeabi-v7a-release.apk/file" target="_blank" rel="noopener noreferrer">release/app-armeabi-v7a-release.apk (armeabi-v7a)</a>
+- <a target="_blank" href="https://www.mediafire.com/file/gg8qhwj38jn9o0g/app-release.apk/file" target="_blank" rel="noopener noreferrer">release/app-release.apk (universal)</a>
+- <a target="_blank" href="https://www.mediafire.com/file/0dct43pzlkaje3w/app-arm64-v8a-release.apk/file" target="_blank" rel="noopener noreferrer">release/app-arm64-v8a-release.apk (arm64-v8a)</a>
+- <a target="_blank" href="https://www.mediafire.com/file/pf3qriqrw1g1cqx/app-armeabi-v7a-release.apk/file" target="_blank" rel="noopener noreferrer">release/app-armeabi-v7a-release.apk (armeabi-v7a)</a>
